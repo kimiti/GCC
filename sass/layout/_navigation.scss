@@ -30,7 +30,7 @@
   &__background {
     height: 6rem;
     width: 6rem;
-    opacity: 0.8;
+    opacity: 0.5;
     border-radius: 50%;
     position: fixed;
     top: 6.5rem;
@@ -85,6 +85,7 @@
       display: inline-block;
       font-size: 3rem;
       font-weight: 300;
+      letter-spacing: 5px;
       padding: 1rem 2rem;
       color: $color-white;
       text-decoration: none;

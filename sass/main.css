@@ -309,8 +309,8 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
   border: none;
@@ -366,13 +366,13 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .btn--animated {
-  -webkit-animation: moveInBottom .5s ease-out .75s;
-          animation: moveInBottom .5s ease-out .75s;
+  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
+          animation: moveInBottom 0.5s ease-out 0.75s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -384,8 +384,8 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #74b9ff;
   padding: 3px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .btn-text:hover {
@@ -402,6 +402,22 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.btn-text__small {
+  color: #74b9ff;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #74b9ff;
+  margin-top: 1.3rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: small !important;
+}
+
+.btn-text__small:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .card {
@@ -688,6 +704,9 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
+  height: 25rem;
+  position: relative;
+  overflow: hidden;
   text-align: center;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -807,6 +826,108 @@ body {
           transform: scale(0.95);
 }
 
+.music-player_container {
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  height: 12rem;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.music-player_container:hover {
+  -webkit-transform: translateY(-4rem) scale(1.03);
+          transform: translateY(-4rem) scale(1.03);
+}
+
+.music-player_progress-bar {
+  height: 3rem;
+  width: 100%;
+}
+
+.music-player--current {
+  position: absolute;
+}
+
+.music-player--total {
+  position: absolute;
+  right: 0;
+}
+
+.fill {
+  position: absolute;
+  left: 3.3rem;
+  top: 1rem;
+  background-color: #8ba989;
+  width: 35%;
+  height: 0.3rem;
+  border-radius: 2px;
+}
+
+.currently-playing {
+  font-size: 1.1rem;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #8ba989;
+}
+
+.controls .option {
+  left: 10px;
+  position: absolute;
+  font-size: 0.8em;
+}
+
+.controls .play {
+  margin: 15px 20px;
+  color: #6e946c;
+}
+
+.controls .add {
+  right: 5px;
+  position: absolute;
+  font-size: 0.8em;
+}
+
+.controls .volume {
+  margin-right: 20px;
+  font-size: 0.8em;
+}
+
+.controls .shuffle {
+  margin-left: 20px;
+  font-size: 0.8em;
+}
+
+.play,
+.next,
+.previous,
+.volume,
+.shuffle {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.play:hover,
+.next:hover,
+.previous:hover,
+.add:hover,
+.volume:hover,
+.shuffle:hover {
+  color: #557c5f;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -916,7 +1037,7 @@ body {
 .navigation__background {
   height: 6rem;
   width: 6rem;
-  opacity: 0.8;
+  opacity: 0.5;
   border-radius: 50%;
   position: fixed;
   top: 6.5rem;
@@ -974,6 +1095,7 @@ body {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
+  letter-spacing: 5px;
   padding: 1rem 2rem;
   color: #fff;
   text-decoration: none;
@@ -1203,6 +1325,10 @@ body {
     width: 100%;
     float: none;
   }
+}
+
+.footer-logo {
+  height: 100px;
 }
 
 .section-about {
