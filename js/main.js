@@ -13,7 +13,7 @@ function initAudioPlayer() {
     playlist,
     ext,
     agent;
-  dir = "audio/";
+  dir = "../audio/";
   playlist = ["1", "2"];
   playlist_index = 0;
   ext = ".mp3";
@@ -64,10 +64,10 @@ function initAudioPlayer() {
   function playPause() {
     if (audio.paused) {
       audio.play();
-      playbtn.style.background = "url(images/pause.png) no-repeat";
+      // playbtn.style.background = "url(images/pause.png) no-repeat";
     } else {
       audio.pause();
-      playbtn.style.background = "url(images/play.png) no-repeat";
+      // playbtn.style.background = "url(images/play.png) no-repeat";
     }
   }
   //switchTrack

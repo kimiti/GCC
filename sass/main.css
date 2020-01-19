@@ -828,17 +828,11 @@ body {
 
 .music-player_container {
   position: absolute;
-  top: 5rem;
   width: 100%;
   height: 12rem;
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-.music-player_container:hover {
-  -webkit-transform: translateY(-4rem) scale(1.03);
-          transform: translateY(-4rem) scale(1.03);
 }
 
 .music-player_progress-bar {
@@ -1289,11 +1283,11 @@ body {
 }
 
 .footer__item {
-  display: inline-block;
+  display: block;
 }
 
 .footer__item:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer__link:link, .footer__link:visited {
